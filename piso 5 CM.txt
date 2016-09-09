@@ -1,0 +1,62 @@
+IP DE MAQUINA SPLINTER
+
+10.91.9.19
+U: sroldan
+P: sroldan123
+
+ACCESO A SVN splinter
+
+U: sroldan
+P: admin
+
+
+
+ 
+ACCESO SVN CORPORATIVO
+
+U: CL142072572
+P: Banco001
+
+
+ACCESO A REDMINE
+
+usuario: mandrios
+clave: Banco001
+---------------------------------------------------------------------------------------
+
+Trunk Quickpay en splinter
+
+http://10.91.9.19/repos/QuickPayDesarrollo/trunk
+---------------------------------------------------------
+
+Documentacion
+
+http://10.91.9.19/repos/QuickPayDesarrollo/branches/Documentacion/endpoints.xlsx
+
+----------------------------------------------------------------------------------------
+
+subida de administrador:
+nohup ./startWebLogic.sh > AdminServer.`date '+%Y%m%d_%H%M%S'`.out 2>&1&
+
+./startManagedWebLogic.sh soa_server1 http://10.91.9.195:8001 > soa_server1.`date '+%Y%m%d_%H%M%S'`.out 2>&1&
+
+
+loguear en log4j
+
+%d{dd MMM yyyy - HH:mm:ss} [%-5p] %c{2} - %m%n
+
+
+
+
+
+
+
+ver version del java
+
+
+update-alternatives --display java
+
+actualizar java
+
+
+update-alternatives --config java
